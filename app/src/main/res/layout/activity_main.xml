@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6AFF2"
+    android:backgroundTint="#F4ECA3"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Ввод названия города -->
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Введите название города"
+        android:inputType="text"
+        android:padding="8dp"
+        tools:ignore="Autofill" />
+
+    <!-- Кнопка обновления -->
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Обновить" />
+
+    <!-- Название города -->
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Город"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Температура -->
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Температура"
+        android:textSize="20sp" />
+
+    <!-- Состояние погоды -->
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Состояние"
+        android:textSize="20sp" />
+
+</RelativeLayout>
